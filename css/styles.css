@@ -1488,7 +1488,9 @@ ul { list-style: none; }
   .page-header h1 { font-size: 2.5rem; }
 
   /* Hero */
-  .hero-title { font-size: 13vw; }
+  .hero { padding-top: 5rem; min-height: auto; padding-bottom: 3rem; }
+  .hero-content { padding: 0 1.5rem; }
+  .hero-title { font-size: 11vw; }
   .hero-tagline { font-size: 1rem; letter-spacing: 0.1em; }
   .hero-subtitle { font-size: 1rem; }
   .hero-divider { margin: 1.5rem auto; }
