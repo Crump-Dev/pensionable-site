@@ -358,7 +358,12 @@
 
   <!-- ===== SCRIPTS ===== -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script>lucide.createIcons();</script>
+  <script>
+    lucide.createIcons();
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.floating-item').forEach(el => el.classList.add('animated'));
+    });
+  </script>
   <script src="js/main.js"></script>
 
 </body>
