@@ -1409,10 +1409,171 @@ ul { list-style: none; }
   to { background-position: 100% 100%; }
 }
 
-/* ── Security Grid (Technology Page) ── */
+/* ── Values Grid 2-col variant (Technology Page) ── */
+@media (min-width: 768px) {
+  .values-grid-2col { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Service Card Inner Elements ── */
+.service-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.service-card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  color: var(--foreground);
+}
+
+@media (min-width: 768px) {
+  .service-card-title { font-size: 2rem; }
+}
+
+.service-card-desc {
+  color: var(--muted);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.service-card-icon {
+  width: 4rem;
+  height: 4rem;
+  background: var(--surface-alt);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-card-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--secondary);
+}
+
+/* Service features list items (used in homepage service cards) */
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--foreground);
+}
+
+.service-features li svg {
+  width: 1rem;
+  height: 1rem;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+/* ── Mobile Responsive Fixes ── */
 @media (max-width: 767px) {
+
+  /* Tighten section padding on mobile */
+  .section { padding: 3rem 0; }
+
+  /* Smaller section titles */
+  .section-title { font-size: 2rem; line-height: 1.1; }
+  .section-title-xl { font-size: 2.25rem; }
+
+  /* Page headers */
+  .page-header { padding: 8rem 0 2rem; }
+  .page-header h1 { font-size: 2.5rem; }
+
+  /* Hero */
+  .hero-title { font-size: 13vw; }
+  .hero-tagline { font-size: 1rem; letter-spacing: 0.1em; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero-divider { margin: 1.5rem auto; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .hero-buttons .btn { width: 100%; max-width: 320px; }
+
+  /* Hide floating items on small screens */
+  .floating-items { display: none; }
+
+  /* Parallax */
+  .parallax-section { height: 50vh; }
+  .parallax-title { font-size: 2rem; }
+  .parallax-sub { font-size: 1rem; }
+
+  /* Service cards — single column, no side icon column */
+  .service-card {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .service-card-icon { display: none; }
+
+  .service-number { font-size: 3rem; }
+
+  /* Service features — single column on mobile */
+  .service-features {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  /* Cards tighter on mobile */
+  .advantage-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .sp-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  /* Story section */
+  .story-section {
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  /* CTA */
+  .cta-section { padding: 3rem 0; }
+  .cta-outer { padding: 1rem; border-radius: 1.5rem; }
+  .cta-inner { padding: 2rem 1.5rem; border-radius: 1.25rem; }
+  .cta-banner { padding: 2rem 1.5rem; border-radius: 1.5rem; margin-top: 2rem; }
+  .cta-banner h2 { font-size: 1.5rem; }
+
+  /* Security grid (technology page) */
   .security-grid {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
   }
+
+  /* Technology page core capabilities inline 2-col override */
+  .values-grid[style*="grid-template-columns: repeat(2"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer */
+  .site-footer { padding: 3rem 0 0; }
+  .footer-grid { gap: 2rem; padding-bottom: 2rem; }
+
+  /* Marquee smaller */
+  .marquee-section { padding: 2rem 0; }
+  .marquee-word { font-size: 1.75rem; padding: 0 0.75rem; }
+
+  /* Buttons */
+  .btn-lg { height: 3.25rem; padding: 0 1.75rem; font-size: 0.875rem; }
+  .btn-xl { height: 4rem; padding: 0 2rem; font-size: 1rem; }
+
+  /* Contact form */
+  .contact-form-card { padding: 1.5rem; border-radius: 1.5rem; }
+  .hours-card { padding: 1.5rem; border-radius: 1.5rem; }
 }
