@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team - pensionable.ai</title>
+  <meta name="description" content="Meet the team behind pensionable.ai — pension industry veterans and technology experts delivering AI-powered certainty.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/styles.css?v=1">
+  <style>
+    .team-heading { text-align: center; margin-bottom: 4rem; }
+    .team-heading h1 { font-weight: 900; font-size: 3rem; margin-bottom: 1rem; }
+    @media (min-width: 768px) { .team-heading h1 { font-size: 5rem; } }
+    .team-heading p { color: var(--muted); font-weight: 300; font-size: 1.125rem; max-width: 700px; margin: 0 auto; }
+    .team-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    @media (min-width: 768px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
+    .team-card { background: var(--surface); border-radius: 2rem; overflow: hidden; border: 1px solid var(--border); transition: all 0.3s; }
+    .team-card:hover { border-color: rgba(124, 58, 237, 0.3); transform: translateY(-4px); box-shadow: 0 8px 32px rgba(124, 58, 237, 0.1); }
+    .team-photo { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+    .team-photo-placeholder { width: 100%; aspect-ratio: 1; background: var(--surface-alt); display: flex; align-items: center; justify-content: center; }
+    .team-info { padding: 2rem; }
+    .team-info h3 { font-weight: 700; font-size: 1.5rem; margin-bottom: 0.25rem; color: var(--foreground); }
+    .team-role { color: var(--primary); font-weight: 500; font-size: 0.9375rem; margin-bottom: 1rem; }
+    .team-bio { color: var(--muted); font-weight: 300; font-size: 0.9375rem; line-height: 1.7; margin-bottom: 1.5rem; }
+    .team-link { color: var(--primary); font-weight: 400; font-size: 0.9375rem; text-decoration: underline; text-underline-offset: 3px; transition: opacity 0.2s; }
+    .team-link:hover { opacity: 0.7; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span>pensionable<span class="ai">.ai</span></span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="technology.html">Technology</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="team.html" class="active">Team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-mobile-toggle" aria-label="Toggle menu">
+        <i data-lucide="menu" id="menu-icon"></i>
+        <i data-lucide="x" id="close-icon" style="display:none"></i>
+      </button>
+    </div>
+    <nav class="nav-mobile">
+      <a href="index.html">Home</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="technology.html">Technology</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="team.html" class="active">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== TEAM SECTION ===== -->
+  <section class="section" style="padding-top:10rem">
+    <div class="container">
+      <div class="team-heading">
+        <h1 class="reveal">Our <span class="purple">Team</span></h1>
+        <p class="reveal">Decades of pension industry experience combined with deep AI and technology expertise. We understand your challenges because we've spent our careers solving them.</p>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="team-card reveal" style="--i:0">
+          <div class="team-photo-placeholder">
+            <i data-lucide="user" style="width:4rem;height:4rem;color:var(--border)"></i>
+          </div>
+          <div class="team-info">
+            <h3>Mark Crump</h3>
+            <p class="team-role">Chief Executive Officer</p>
+            <p class="team-bio">Over 20 years leading pensions administration software companies as CEO and CTO. Mark specialises in transforming complex pension challenges into enterprise-grade solutions, combining deep product design expertise with lasting client relationships across the industry.</p>
+            <a href="#" class="team-link">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="team-card reveal" style="--i:1">
+          <div class="team-photo-placeholder">
+            <i data-lucide="user" style="width:4rem;height:4rem;color:var(--border)"></i>
+          </div>
+          <div class="team-info">
+            <h3>Spencer Lynch</h3>
+            <p class="team-role">Commercial Director</p>
+            <p class="team-bio">A senior technology leader in pensions with a proven track record of streamlining administration processes. Spencer is driven by making pension management more accessible, efficient, and stress-free for administrators, employers, and scheme members alike.</p>
+            <a href="#" class="team-link">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="team-card reveal" style="--i:2">
+          <div class="team-photo-placeholder">
+            <i data-lucide="user" style="width:4rem;height:4rem;color:var(--border)"></i>
+          </div>
+          <div class="team-info">
+            <h3>Jason Rogers</h3>
+            <p class="team-role">Chief Technology Officer</p>
+            <p class="team-bio">25 years in financial services and technology, including senior leadership at multi-billion dollar hedge funds. Jason has architected enterprise-grade reconciliation solutions and complex financial workflows, with deep expertise in machine learning and data security.</p>
+            <a href="#" class="team-link">LinkedIn</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="display:flex;justify-content:center;gap:2rem;margin-top:2rem;flex-wrap:wrap">
+
+        <div class="team-card reveal" style="--i:3;max-width:400px;width:100%">
+          <div class="team-photo-placeholder">
+            <i data-lucide="user" style="width:4rem;height:4rem;color:var(--border)"></i>
+          </div>
+          <div class="team-info">
+            <h3>Andrew Davidson</h3>
+            <p class="team-role">Board Advisor</p>
+            <p class="team-bio">A technology entrepreneur with over 25 years of experience founding and scaling companies. Andy has led teams of 200+, raised over &pound;10M in finance, and achieved multiple 8-figure exits. His strategic insight spans enterprise technology, product development, and system architecture.</p>
+            <a href="#" class="team-link">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="team-card reveal" style="--i:4;max-width:400px;width:100%">
+          <div class="team-photo-placeholder">
+            <i data-lucide="user" style="width:4rem;height:4rem;color:var(--border)"></i>
+          </div>
+          <div class="team-info">
+            <h3>David Rich</h3>
+            <p class="team-role">Chief Data Officer</p>
+            <p class="team-bio">Over 25 years as a technology and data entrepreneur with deep pensions expertise. From de-risking programmes to Pensions Dashboard delivery, David combines hands-on pensions experience with a rare understanding of how to unlock the power of data.</p>
+            <a href="#" class="team-link">LinkedIn</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION & VALUES ===== -->
+  <section class="section section-alt">
+    <div class="container" style="text-align:center">
+      <h2 class="section-title reveal">Our <span class="purple">Mission</span></h2>
+      <p class="section-subtitle reveal" style="margin:0 auto 4rem;max-width:700px">To transform pension administration through intelligent automation and AI-powered solutions, bringing mathematical precision and clarity to the complex world of pension management.</p>
+      <div class="values-grid stagger">
+
+        <div class="value-card" style="--i:0">
+          <div class="icon-box bg-primary" style="width:4rem;height:4rem;border-radius:1.25rem;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem">
+            <i data-lucide="target" style="width:1.5rem;height:1.5rem;color:#FFFFFF"></i>
+          </div>
+          <h3>Precision</h3>
+          <p>Delivering mathematical accuracy and eliminating ambiguity in pension management.</p>
+        </div>
+
+        <div class="value-card" style="--i:1">
+          <div class="icon-box bg-secondary" style="width:4rem;height:4rem;border-radius:1.25rem;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem">
+            <i data-lucide="lightbulb" style="width:1.5rem;height:1.5rem;color:#FFFFFF"></i>
+          </div>
+          <h3>Innovation</h3>
+          <p>Pushing boundaries with advanced AI and automated reasoning technology.</p>
+        </div>
+
+        <div class="value-card" style="--i:2">
+          <div class="icon-box bg-brandaccent" style="width:4rem;height:4rem;border-radius:1.25rem;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem">
+            <i data-lucide="shield" style="width:1.5rem;height:1.5rem;color:#FFFFFF"></i>
+          </div>
+          <h3>Trust</h3>
+          <p>Building reliable, secure solutions for enterprise-grade pension operations.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Want to Meet the Team?</h2>
+        <p>We're always happy to have a conversation about your pension challenges. Schedule a call and find out how we can help.</p>
+        <a href="contact.html" class="btn btn-lg btn-solid">Get in Touch <i data-lucide="arrow-right" style="width:1.25rem;height:1.25rem"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:0.5rem">
+            <span>pensionable<span class="ai">.ai</span></span>
+          </div>
+          <p>AI-powered pension management delivering mathematical certainty to benefit calculations, data processing, and compliance.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="technology.html">Technology</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Solutions</h4>
+          <div class="footer-links">
+            <a href="solutions.html">Defined Benefit PRT</a>
+            <a href="solutions.html">ISP Value Data</a>
+            <a href="solutions.html">GMP Rectification</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-social">
+            <a href="mailto:info@pensionable.ai" aria-label="Email"><i data-lucide="mail" style="width:1.125rem;height:1.125rem"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:1.125rem;height:1.125rem"></i></a>
+          </div>
+          <p style="color:rgba(255,255,255,0.5);font-weight:300;margin-bottom:1rem">Ready to bring certainty to your operations?</p>
+          <a href="contact.html" class="btn btn-lg btn-primary" style="width:100%">Book a Consultation</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> pensionable.ai. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
